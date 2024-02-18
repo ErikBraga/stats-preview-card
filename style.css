@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0A0C1B;
+    min-height: 100vh;
+}
+
+/* container */
+#container{
+    display: flex;
+    width: 1305px;
+    height: 500px;
+    background-color: #1C1938;
+    border-radius: 10px;
+}
+
+#container main{
+    width: 50%;
+    height: 100%;
+    padding: 70px;
+    padding-right: 90px;
+    padding-top: 90px;
+}
+
+#container section{
+    width: 50%;
+    height: 100%;
+}
+
+#container section img{
+    width: 100%;
+    height: 100%;
+    filter: invert(8%) sepia(13%) saturate(2535%) hue-rotate(224deg) brightness(56%) contrast(94%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* textos */
+#container main h1{
+    font-size: 45px;
+    color: #FFF;
+    margin-bottom: 40px;
+}
+
+.h1-roxo{
+    color: #A95CDA;
+}
+
+#container main p{
+    font-size: 16px;
+    color: hsla(0, 0%, 100%, 0.461);
+    line-height: 1.8em;
+    margin-right: 72px;
+}
+
+/* container numeros */
+#num-container{
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    height: 50px;
+    margin-top: 50px;
+}
+
+#num-container .num-box{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.num-box .num{
+    font-size: 30px;
+    font-weight: 700;
+    color: #FFF;
+}
+
+.num-box .txt{
+    margin-top: 6px;
+    color: hsla(0, 0%, 100%, 0.461);
+}
+
+@media (min-width: 360px) and (max-width: 500px){
+    #container{
+        width: 90%;
+        height: 90%;
+        flex-direction: column-reverse;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #container main{
+        width: 100%;
+        height: 650px;
+        padding: 30px;
+    }
+
+    #container section{
+        width: 100%;
+        height: 100%;
+    }
+
+    #container section img{
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 0;
+    }
+
+    #container main h1{
+        font-size: 35px;
+        color: #FFF;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    #container main p{
+        text-align: center;
+        margin-right: 0;
+    }
+
+    #num-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+        margin-top: 30px;
+    }
+
+    #num-container .num-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        margin-bottom: 40px;
+    }
+}
